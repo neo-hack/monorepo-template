@@ -2,7 +2,11 @@
   "name": "@aiou/monorepo-template",
   "version": "1.0.0",
   "description": "monorepo template",
-  "keywords": ["monorepo", "template", "neo"],
+  "keywords": [
+    "monorepo",
+    "template",
+    "neo"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/neo-hack/monorepo-template#readme",
   "repository": {
@@ -15,8 +19,6 @@
   "author": {
     "name": "jiangweixian"
   },
-  "main": "index.js",
-  "files": ["packages/core"],
   "scripts": {
     "lint": "eslint '**/*.{js,ts,tsx,json}'",
     "lint:fix": "eslint . --fix",
@@ -29,7 +31,9 @@
     "test": "pnpm jest -r"
   },
   "lint-staged": {
-    "**/**/*.{js,ts,tsx,vue,json}": ["eslint --fix"]
+    "**/**/*.{js,ts,tsx,vue,json}": [
+      "eslint --fix"
+    ]
   },
   "devDependencies": {
     "@aiou/eslint-config": "^0.4.0",
@@ -37,9 +41,10 @@
     "cz-emoji": "^1.3.1",
     "eslint": "^8.6.0",
     "fs-extra": "^10.0.0",
-    "husky": "latest",
+    "husky": "^7.0.0",
     "lint-staged": "^12.1.7",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
   },
   "config": {
     "commitizen": {
